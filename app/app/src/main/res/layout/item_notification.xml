@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_item_notification"
+    android:layout_marginTop="16dp"
+    android:layout_height="110dp">
+    <ImageView
+        tools:ignore="ContentDescription"
+        android:layout_marginStart="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+        />
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:weightSum="3"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Notification 1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="14sp"
+            android:text="Notification 1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="14sp"
+            android:text="25/01/2024"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+    </LinearLayout>
+</LinearLayout>

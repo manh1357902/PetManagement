@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">PetManagement</string>
+    <string name="login">Đăng nhập</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="password">Mật khẩu</string>
+    <string name="welcome">Xin chào</string>
+    <string name="signup">Đăng ký</string>
+    <string name="home">Trang chủ</string>
+    <string name="pet">Thú cưng</string>
+    <string name="title_home">Thú cưng</string>
+    <string name="title_library">Thư viện</string>
+    <string name="title_profile">Trang cá nhân</string>
+    <string name="your_pet">Thú cưng củng bạn</string>
+    <string name="add_pet">Thêm thú cưng</string>
+    <string name="name_pet">Tên thú cưng</string>
+    <string name="species">Loại thú cưng</string>
+    <string name="breed">Giống loài</string>
+    <string name="date_of_birth">Ngày sinh</string>
+    <string name="weight">Cân nặng</string>
+    <string name="gender">Giới tính</string>
+    <string name="detail_pet">Chi tiết thú cưng</string>
+    <string name="update_pet">Cập nhập</string>
+    <string name="nutritions_infor">Thông tin dinh dưỡng</string>
+    <string name="dog">Chó</string>
+    <string name="cat">Mèo</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="food_type">Loại đồ ăn</string>
+    <string name="library_disease">Thư viện bệnh</string>
+    <string name="diseases_detail">Chi tiết bệnh</string>
+    <string name="notification">Thông báo</string>
+    <string name="title_community">Cộng đồng</string>
+    <string name="cart">Giỏ hàng</string>
+    <string name="more">Thêm</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_vaccine_injection_schedule">VaccineInjectionScheduleActivity
+    </string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+</resources>
+
+

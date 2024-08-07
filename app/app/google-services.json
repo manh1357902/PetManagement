@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "336845763653",
+    "project_id": "mobile-server-firebase",
+    "storage_bucket": "mobile-server-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336845763653:android:ddb7c4874444f7cf3a9f2c",
+        "android_client_info": {
+          "package_name": "com.project.petmanagement"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZY-1AkRMTu-zpiQspxPAgPky_WF80aIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

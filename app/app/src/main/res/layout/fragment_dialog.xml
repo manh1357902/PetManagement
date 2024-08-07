@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginHorizontal="40dp"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:text="Tên của tài liệu"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/name_medical"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên hồ sơ"
+        />
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ghi chú"
+        />
+    <ImageView
+        android:id="@+id/choose_file"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_file_open_24"
+        android:layout_gravity="center_horizontal"
+        app:tint="@color/green" />
+    <TextView
+        android:id="@+id/name_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/btn_accept"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="#2BA599"
+        android:layout_gravity="end"
+        />
+</LinearLayout>

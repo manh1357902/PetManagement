@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.diseases.DiseaseDetailsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_marginStart="20dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            tools:ignore="ContentDescription"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/diseases_detail"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:id="@+id/line"
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        />
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_below="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Viêm ruột truyền nhiễm"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Mô tả bệnh"
+                android:textSize="18sp"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/description"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Bệnh này do Canine Parvovirus (CPV) gây ra và là 1 bệnh truyền nhiễm cấp tính và có tỷ lệ tử vong lớn. Parvovirus rất dễ lây lan, có thể bị lây ngay do tiếp xúc trực tiếp hoặc gián tiếp với phân, chất thải đã bị nhiễm - loại bệnh cực kỳ hay mắc phải ở chó con dưới 1 tuổi, đặc biệt là giai đoạn 1 - dưới 6 tháng."
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2. Triệu chứng"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/symptoms"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Tiêu chảy ra máu, nôn mửa và chán ăn bỏ ăn, cơ thể mệt mỏi dẫn đến kém năng động, nằm một chỗ."
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="3. Cách phòng tránh"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/preventions"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Thường xuyên vệ sinh tiêu độc chuồng trại và môi trường xung quanh.\nPhòng bệnh Parvo ở chó bằng việc chăm sóc, nuôi dưỡng chu đáo.\nĐịnh kì đến phòng khám kiểm tra, xét nghiệm để nắm bắt được tình hinh sức khỏe của bé và phát hiện bệnh sớm, ngay cả khi đang ủ bệnh."
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="4. Phương pháp điều trị"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/treatments"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Kịp thời bổ sung nước, chất điện giải, tăng cường sức đề kháng, chống nhiễm trùng kế phát.\nCách ly con vật ốm để nơi sạch sẽ, thoáng mát, cung cấp đủ nước uống và đặc biệt tránh cho chó uống phải nước bẩn.\nTiêm truyền tĩnh mạch nước muối sinh lý 0.9%, Ringer lactac, glucozo 5%,…"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

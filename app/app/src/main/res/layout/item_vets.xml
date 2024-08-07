@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/custom_search"
+    android:id="@+id/item_veterinarian"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="90dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="90dp">
+        <ImageView
+            android:id="@+id/image_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bs2"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_marginStart="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr.Mary"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:padding="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/outline_business_center_24"
+                    app:tint="#989D98"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/work_at"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_star_rate_24"
+                tools:ignore="ContentDescription"
+                app:tint="#989D98" />
+
+            <TextView
+                android:id="@+id/experience"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

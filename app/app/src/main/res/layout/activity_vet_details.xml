@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.veterinarian.VetDetailsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginVertical="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_arrow_back_ios_24"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="22sp"
+                    android:text="Thông tin bác sĩ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/btn_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_share_24"
+                    android:layout_alignParentEnd="true"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_height="160dp">
+                <ImageView
+                    android:id="@+id/vet_avatar"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/bs2"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/btn_call_veterinarian"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/green_background_button"
+                android:layout_width="250dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ic_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_phone_24"
+                    android:paddingHorizontal="10dp"
+                    />
+                <TextView
+                    android:layout_toEndOf="@+id/ic_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liên lạc"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/vet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr.Ly Ly"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số điện thoại: "
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:textSize="18sp"
+                        android:id="@+id/phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0123456789"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email: "
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:textSize="18sp"
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="k@gmail.com"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nơi làm việc: "
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:textSize="18sp"
+                        android:id="@+id/work_at"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="bệnh viện"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/address_veterina"
+                >
+                <LinearLayout
+                    android:layout_marginStart="40dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_pin_drop_24"
+                        android:layout_marginEnd="10dp"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:id="@+id/clinic_address"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trần Phú - Hà Đông - Hà Nội"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottom_veterina"
+                >
+                <LinearLayout
+                    android:layout_marginStart="40dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_language_24"
+                        android:layout_marginEnd="10dp"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:id="@+id/experience"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        />
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" năm kinh nghiệm"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giới thiệu"
+                android:textColor="@color/green"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/description"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Điều quan trọng là phải chăm sóc bệnh nhân, được bệnh nhân theo dõi, nhưng điều đó sẽ xảy ra vào thời điểm có rất nhiều công sức và đau đớn."
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
